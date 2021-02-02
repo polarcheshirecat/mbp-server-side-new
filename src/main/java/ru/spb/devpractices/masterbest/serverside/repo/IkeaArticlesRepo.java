@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.repo;import org.springframework.data.jpa.repository.JpaRepository;import ru.spb.devpractices.masterbest.serverside.model.order.IkeaArticle;public interface IkeaArticlesRepo extends JpaRepository<IkeaArticle, String> {}

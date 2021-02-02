@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.model;public enum UserRole  {    USER,    ADMIN,    ;}

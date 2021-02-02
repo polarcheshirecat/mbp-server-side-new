@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.model.order;import lombok.Data;import javax.persistence.*;@Entity@Data@Table(name = "order_types")public class OrderType {    @Id    private Long id;    @Column(name ="name")    private String name;}

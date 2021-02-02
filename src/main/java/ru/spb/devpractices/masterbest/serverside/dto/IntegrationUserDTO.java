@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.dto;import lombok.Data;import lombok.EqualsAndHashCode;import java.io.Serializable;@Data@EqualsAndHashCodepublic class IntegrationUserDTO implements Serializable {    private String userId;    private String name;    private String current_status;    private String futureStatus;    private Boolean active;}

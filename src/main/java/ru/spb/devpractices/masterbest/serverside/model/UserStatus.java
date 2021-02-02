@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.model;public enum UserStatus {    FREE,    IN_WORK,    SUSPENDED,    WEEKEND    ;}
