@@ -1,1 +1,0 @@
-package ru.spb.devpractices.masterbest.serverside.services;import org.springframework.stereotype.Service;@Servicepublic class IntegrationService {}

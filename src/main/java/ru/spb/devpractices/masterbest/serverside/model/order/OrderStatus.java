@@ -1,1 +1,1 @@
-package ru.spb.devpractices.masterbest.serverside.model.order;public enum OrderStatus {    New,    Viewed,    Accepted,    InWork,    Suspended,    Rejected,    Completed,    FalseVisit,    NotFinished    ;}
+package ru.spb.devpractices.masterbest.serverside.model.order;public enum OrderStatus {    NEW,    VIEWED,    ACCEPTED,    INWORK,    SUSPENDED,    REJECTED,    COMPLETED,    FALSEVISIT,    NOTFINISHED    ;}
