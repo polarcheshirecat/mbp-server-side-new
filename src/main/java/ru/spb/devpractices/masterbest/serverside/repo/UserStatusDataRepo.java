@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.repo;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;import ru.spb.devpractices.masterbest.serverside.model.UserStatusData;@Repositorypublic interface UserStatusDataRepo extends JpaRepository<UserStatusData, Long> {}

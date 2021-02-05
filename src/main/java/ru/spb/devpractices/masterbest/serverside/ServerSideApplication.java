@@ -14,6 +14,11 @@ public class ServerSideApplication {
         return new IntegrationPushOrderMapper();
     }
 
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
     public static void main(String[] args) {
 
         SpringApplication.run(ServerSideApplication.class, args);
