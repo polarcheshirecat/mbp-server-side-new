@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.model;public enum DocumentType {    SMETA,    RASPISKA,    AKT_OSMOTRA,    AKT_PLATNUE_USLUGI,    AKT_SDACHI_PRIEMKI,}
