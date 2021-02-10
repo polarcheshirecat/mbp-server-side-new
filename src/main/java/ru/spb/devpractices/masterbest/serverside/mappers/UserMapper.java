@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.mappers;import org.mapstruct.Mapper;import ru.spb.devpractices.masterbest.serverside.dto.UserDTO;import ru.spb.devpractices.masterbest.serverside.model.User;@Mapper(componentModel = "spring")public interface UserMapper {    UserDTO toDto (User user);    User toEntity (UserDTO dto);}

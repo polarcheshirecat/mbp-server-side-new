@@ -1,0 +1,1 @@
+package ru.spb.devpractices.masterbest.serverside.mappers;import org.mapstruct.Mapper;import ru.spb.devpractices.masterbest.serverside.dto.OrderDTO;import ru.spb.devpractices.masterbest.serverside.model.order.Order;@Mapper(componentModel = "spring")public interface OrderMapper {    OrderDTO toDto (Order order);    Order toEntity (OrderDTO dto);}
