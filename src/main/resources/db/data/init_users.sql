@@ -1,4 +1,4 @@
-INSERT INTO  users (user_id, name) VALUES
+INSERT INTO  users (id, name) VALUES
     (000000001,'Волков Андрей'),
     (000000002,'Русаловский Андрей'),
     (000000006,'Шилин Евгений'),
