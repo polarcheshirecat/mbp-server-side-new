@@ -4,9 +4,9 @@ spring:
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 10
+      connection-init-sql: SET TIME ZONE 'Europe/Moscow'
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${DATABASE_HOST:localhost}/${DATABASE_NAME:postgres}?currentSchema=public
-    time-zone: UTC+3
     username: ${DATABASE_USER:postgres}
     password: ${DATABASE_PASSWORD:docker}
   jpa:
@@ -16,7 +16,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL9Dialect
         jdbc:
-          time_zone: UTC
+          time_zone: UTC+3
           batch_size: 5
         order_updates: true
         order_inserts: true
@@ -30,6 +30,19 @@ spring:
     allow-bean-definition-overriding: true
   application:
     name: mmbp-server-side
+
+  profiles:
+    active: dev
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework: INFO
+    org.springframework.data: INFO
+    ru.spb.devpractices: DEBUG
+  file:
+    name: /home/polarcheshire/Coding/logs/mb/mbp-server.log
 
 
 
