@@ -12,19 +12,9 @@ import ru.spb.devpractices.masterbest.serverside.mappers.IntegrationPushOrderMap
 
 import java.net.InetAddress;
 
-@Slf4j
+
 @SpringBootApplication
 public class ServerSideApplication {
-
-    @Value("${local.server.port}")
-    private static int serverPort;
-
-
-
-    @Bean
-    IntegrationPushOrderMapper getMapper (){
-        return new IntegrationPushOrderMapper();
-    }
 
     @Bean
     public RestTemplate restTemplate() {
@@ -32,9 +22,6 @@ public class ServerSideApplication {
     }
 
     public static void main(String[] args) {
-        log.info("Приложение запущено на " +
-                InetAddress.getLoopbackAddress().getHostAddress()
-                + ":" + serverPort);
-        SpringApplication.run(ServerSideApplication.class, args);
+       SpringApplication.run(ServerSideApplication.class, args);
     }
 }

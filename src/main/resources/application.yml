@@ -4,7 +4,6 @@ spring:
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 10
-      connection-init-sql: SET TIME ZONE 'Europe/Moscow'
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${DATABASE_HOST:localhost}/${DATABASE_NAME:postgres}?currentSchema=public
     username: ${DATABASE_USER:postgres}
@@ -16,7 +15,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL9Dialect
         jdbc:
-          time_zone: UTC+3
+          time_zone: UTC
           batch_size: 5
         order_updates: true
         order_inserts: true
