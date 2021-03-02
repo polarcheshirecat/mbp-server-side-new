@@ -19,6 +19,8 @@ spring:
           batch_size: 5
         order_updates: true
         order_inserts: true
+        format_sql: true
+
     show-sql: true
 
   liquibase:

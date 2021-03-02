@@ -1,1 +1,0 @@
-INSERT INTO    public.orders    (ikea_number, mb_number, date_start, date_end, customer_name, customer_address, customer_phone, comment, order_type_id, false_visit)    VALUES ('2525_2525', '1111', '2021-02-08 13:06:18.206000', null, 'Пися Камушкин', 'Ебанистическа 1-1', '89118268000', '10 каркасов, 2 техники', 50000578, false)

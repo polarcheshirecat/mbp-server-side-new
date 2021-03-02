@@ -1,1 +1,1 @@
-UPDATE users SET username='morozvyacheslav' WHERE id=42;UPDATE users SET username='matveevalexandr' WHERE id=260;
+UPDATE users SET username='gordienkor' WHERE id=111;UPDATE users SET username='konoplevk' WHERE id=152;UPDATE users SET username='zakharenkod' WHERE id=9;UPDATE users SET username='kostrikovd' WHERE id=258;UPDATE users SET username='maykok' WHERE id=255;

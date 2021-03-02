@@ -1,1 +1,18 @@
-package ru.spb.devpractices.masterbest.serverside.services.model;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;import ru.spb.devpractices.masterbest.serverside.model.User;import ru.spb.devpractices.masterbest.serverside.model.order.Order;import ru.spb.devpractices.masterbest.serverside.model.order.OrderStatus;import ru.spb.devpractices.masterbest.serverside.model.order.PushOrderInfo;import ru.spb.devpractices.masterbest.serverside.repo.PushOrdersRepo;@Servicepublic class PushOrdersService {    @Autowired    private PushOrdersRepo repo;    public void save (PushOrderInfo orderInfo){       repo.save(orderInfo);    }}
+package ru.spb.devpractices.masterbest.serverside.services.model;
+
+import org.springframework.stereotype.Service;
+import ru.spb.devpractices.masterbest.serverside.model.order.PushOrderInfo;
+import ru.spb.devpractices.masterbest.serverside.repo.PushOrdersRepo;
+
+@Service
+public class PushOrdersService {
+
+    private final PushOrdersRepo pushOrdersRepo;
+    public PushOrdersService(PushOrdersRepo pushOrdersRepo) {
+        this.pushOrdersRepo = pushOrdersRepo;
+    }
+
+    public void save (PushOrderInfo pushOrderInfo){
+        pushOrdersRepo.save(pushOrderInfo);
+    }
+}
