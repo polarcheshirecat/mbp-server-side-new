@@ -14,11 +14,14 @@ public class OrderUserStatus implements Serializable {
 
     @Id
     @Column(name = "order_id")
-    private String order;
+    private String orderId;
 
     @Id
     @Column(name = "user_id")
-    private Long user;
+    private Long userId;
+
+    @Column(name = "mb_number")
+    private String mbNumber;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;

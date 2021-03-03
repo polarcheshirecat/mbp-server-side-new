@@ -15,5 +15,6 @@ public class OrderItemDTO implements Serializable {
     private String price;
     private String sum;
     private Boolean isFrame;
+    private Boolean isAppliance;
 
 }

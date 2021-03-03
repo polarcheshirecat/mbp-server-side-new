@@ -13,6 +13,7 @@ import java.util.Set;
 public class OrderDTO implements Serializable {
 
     private String ikeaNumber;
+    private String mbNumber;
     private String dateStart;
     private String dateEnd;
     private String customerName;
@@ -20,5 +21,6 @@ public class OrderDTO implements Serializable {
     private String customerPhone;
     private String comment;
     private String orderType;
-    List<OrderItemDTO> orderItemDTOS;
+    private String orderStatus;
+    List<OrderItemDTO> orderItems;
 }

@@ -19,10 +19,14 @@ public interface OrderMapper {
     @Mapping(source = "customer_phone", target = "customerPhone")
     @Mapping(source = "comment", target = "comment")
     @Mapping(source = "order_type", target = "orderType")
-    @Mapping(source = "orderItems", target = "orderItemDTOS")
+    @Mapping(source = "orderItems", target = "orderItems")
     OrderDTO orderToOrderDto (Order order);
 
     default String map(OrderType type){
+        return type.getName();
+    }
+
+    default OrderType map(String type){
         return type.getName();
     }
 

@@ -5,9 +5,11 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class UserOrderStatusDTO implements Serializable {
+public class OrderStatusDTO implements Serializable {
+
     private String userID;
-    private String orderNumber;
+    private String ikeaNumber;
+    private String mbNumber;
     private String status;
     private String comment;
 

@@ -1,1 +1,0 @@
-package ru.spb.devpractices.masterbest.serverside.dto;import com.fasterxml.jackson.annotation.JsonIgnoreProperties;import lombok.Data;import java.sql.Timestamp;@Data@JsonIgnoreProperties(ignoreUnknown = true)public class OrderInfoDTO {    private String ikeaNumber;    private String customerAddress;    private String dateStart;    private String orderStatus;}
