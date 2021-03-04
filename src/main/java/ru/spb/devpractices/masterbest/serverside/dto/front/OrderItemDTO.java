@@ -1,4 +1,4 @@
-package ru.spb.devpractices.masterbest.serverside.dto;
+package ru.spb.devpractices.masterbest.serverside.dto.front;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

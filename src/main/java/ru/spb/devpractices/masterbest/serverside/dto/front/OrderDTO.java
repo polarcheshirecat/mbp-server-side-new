@@ -1,19 +1,15 @@
-package ru.spb.devpractices.masterbest.serverside.dto;
+package ru.spb.devpractices.masterbest.serverside.dto.front;
 
 import lombok.Data;
-import ru.spb.devpractices.masterbest.serverside.model.User;
-import ru.spb.devpractices.masterbest.serverside.model.order.OrderType;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.util.List;
-import java.util.Set;
 
 @Data
 public class OrderDTO implements Serializable {
 
     private String ikeaNumber;
-    private String mbNumber;
+    private String numberMB;
     private String dateStart;
     private String dateEnd;
     private String customerName;

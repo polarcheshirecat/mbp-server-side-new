@@ -3,8 +3,7 @@ package ru.spb.devpractices.masterbest.serverside.mappers;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
-import ru.spb.devpractices.masterbest.serverside.dto.OrderDTO;
-import ru.spb.devpractices.masterbest.serverside.dto.OrderItemDTO;
+import ru.spb.devpractices.masterbest.serverside.dto.front.OrderDTO;
 import ru.spb.devpractices.masterbest.serverside.model.order.Order;
 import ru.spb.devpractices.masterbest.serverside.model.order.OrderType;
 

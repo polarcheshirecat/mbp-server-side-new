@@ -3,7 +3,7 @@ package ru.spb.devpractices.masterbest.serverside.mappers;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
-import ru.spb.devpractices.masterbest.serverside.dto.OrderStatusDTO;
+import ru.spb.devpractices.masterbest.serverside.dto.front.OrderStatusDTO;
 import ru.spb.devpractices.masterbest.serverside.model.order.OrderStatus;
 import ru.spb.devpractices.masterbest.serverside.model.order.OrderUserStatus;
 

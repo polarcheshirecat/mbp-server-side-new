@@ -1,4 +1,4 @@
-package ru.spb.devpractices.masterbest.serverside.dto;
+package ru.spb.devpractices.masterbest.serverside.dto.front;
 
 import lombok.Data;
 
