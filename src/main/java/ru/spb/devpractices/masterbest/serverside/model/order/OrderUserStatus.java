@@ -13,15 +13,12 @@ import java.io.Serializable;
 public class OrderUserStatus implements Serializable {
 
     @Id
-    @Column(name = "order_id")
-    private String orderId;
+    @Column(name = "guid")
+    private String guid;
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "userId")
     private Long userId;
-
-    @Column(name = "mb_number")
-    private String mbNumber;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;

@@ -25,11 +25,4 @@ public interface OrderMapper {
         return type.getName();
     }
 
-    default OrderType map(String type){
-        return type.getName();
-    }
-
-
-
-
 }
