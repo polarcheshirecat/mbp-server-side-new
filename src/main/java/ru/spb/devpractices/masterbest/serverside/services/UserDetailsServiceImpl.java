@@ -7,7 +7,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ru.spb.devpractices.masterbest.serverside.model.User;
 import ru.spb.devpractices.masterbest.serverside.repo.UsersRepo;
-import ru.spb.devpractices.masterbest.serverside.services.model.UserService;
 
 import javax.transaction.Transactional;
 import java.util.HashSet;

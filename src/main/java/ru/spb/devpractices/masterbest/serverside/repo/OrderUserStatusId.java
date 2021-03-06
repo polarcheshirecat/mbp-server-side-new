@@ -1,12 +1,10 @@
 package ru.spb.devpractices.masterbest.serverside.repo;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Id;
 import java.io.Serializable;
 
 @Embeddable
@@ -15,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class OrderUserStatusId implements Serializable {
 
-   private String order;
-   private Long user;
+   private String numberIkea;
+   private Long userId;
 
 }

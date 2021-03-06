@@ -13,12 +13,16 @@ import java.io.Serializable;
 public class OrderUserStatus implements Serializable {
 
     @Id
+    @Column(name = "number_ikea")
+    private String numberIkea;
+
+    @Id
+    @Column(name = "user_id")
+    private Long userId;
+
     @Column(name = "guid")
     private String guid;
 
-    @Id
-    @Column(name = "userId")
-    private Long userId;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;

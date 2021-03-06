@@ -4,10 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import ru.spb.devpractices.masterbest.serverside.model.order.OrderUserStatus;
 
-import java.util.List;
-
 @Repository
 public interface OrderUserStatusRepo extends JpaRepository<OrderUserStatus, OrderUserStatusId> {
 
-    OrderUserStatus findAllByUserAndAndOrder(Long user, String order);
+//    OrderUserStatus findAllByUserAndAndOrder(Long user, String order);
 }
