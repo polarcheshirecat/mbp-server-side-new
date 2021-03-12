@@ -5,13 +5,13 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class OrderItemDTO implements Serializable {
+public class ServiceItemDTO implements Serializable {
 
-    private String article;
+    public ServiceItemDTO (String name){
+        this.setName(name);
+    }
+
     private String name;
-    private String unit;
-    private String count;
     private String price;
-    private String sum;
 
 }

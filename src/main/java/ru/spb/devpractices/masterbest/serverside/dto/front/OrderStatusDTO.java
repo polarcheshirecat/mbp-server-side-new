@@ -7,9 +7,9 @@ import java.io.Serializable;
 @Data
 public class OrderStatusDTO implements Serializable {
 
-    private String userID;
-    private String ikeaNumber;
-    private String mbNumber;
+    private String userId;
+    private String numberIkea;
+    private String numberMB;
     private String status;
     private String comment;
 
