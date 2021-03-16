@@ -32,6 +32,7 @@ spring:
   application:
     name: mmbp-server-side
 
+
 logging:
   level:
     ROOT: INFO
@@ -41,7 +42,6 @@ logging:
     ru.spb.devpractices: DEBUG
   file:
     name: /home/polarcheshire/Coding/logs/mb/mbp-server.log
-
 
 
 
