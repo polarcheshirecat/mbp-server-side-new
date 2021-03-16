@@ -1,5 +1,6 @@
 package ru.spb.devpractices.masterbest.serverside.services;
 
+import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -15,13 +16,10 @@ import java.util.Set;
 
 @Service
 @Transactional
+@AllArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-
     private final UsersRepo usersRepo;
-    public UserDetailsServiceImpl(UsersRepo usersRepo) {
-        this.usersRepo = usersRepo;
-    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
