@@ -8,5 +8,5 @@ import ru.spb.devpractices.masterbest.serverside.model.order.OrderUserStatus;
 @Repository
 public interface OrderUserStatusRepo extends JpaRepository<OrderUserStatus, OrderUserStatusId> {
 
-    OrderStatus findOrderUserStatusByUserIdAndNumberIkea (Long userId, String numberIkea);
+    OrderUserStatus findOrderUserStatusByUserIdAndNumberIkea (Long userId, String numberIkea);
 }

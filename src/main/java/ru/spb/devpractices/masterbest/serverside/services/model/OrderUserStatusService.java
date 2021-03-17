@@ -16,7 +16,7 @@ public class OrderUserStatusService {
         statusRepo.save(orderUserStatus);
     }
 
-    public OrderStatus getOrderStatusByUserIdAndNumberIkea (Long userId, String numberIkea){
+    public OrderUserStatus getOrderStatusByUserIdAndNumberIkea (Long userId, String numberIkea){
        return statusRepo.findOrderUserStatusByUserIdAndNumberIkea(userId, numberIkea);
     }
 }

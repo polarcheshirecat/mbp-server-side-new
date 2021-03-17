@@ -9,10 +9,11 @@ import java.util.Set;
 @Data
 public class OrderDTO implements Serializable {
 
-    private Set<String> rootNumbers;
+    private String guid;
+    private String rootNumbers;
     private String dateStart;
     private String dateEnd;
-    public String status;
+    public OrderStatusDataDTO statusData;
     private String distance;
     private String customerAddress;
     private String customerName;

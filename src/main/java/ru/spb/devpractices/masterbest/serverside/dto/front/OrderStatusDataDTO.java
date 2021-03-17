@@ -5,12 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class OrderStatusDTO implements Serializable {
-
-
-    private String userId;
-    private String guid;
+public class OrderStatusDataDTO implements Serializable {
     private String status;
-    private String comment;
-
+    private boolean archive;
 }
